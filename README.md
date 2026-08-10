@@ -102,26 +102,21 @@ You can inspect the source code, contribute improvements, report problems, and h
 
 ---
 
-# 📸 Screenshots
+# 🔢 TOTP Authentication
 
-> Screenshots will be added as the PicklePass interface continues to develop.
+PicklePass supports **Time-Based One-Time Password (TOTP)** authentication, allowing you to store and use two-factor authentication codes alongside your account credentials.
 
-<!-- Add screenshots here -->
+### ✨ Features
 
----
+* 🔐 Store TOTP secrets with your account information
+* 🔢 Generate time-based authentication codes
+* ⏱️ Codes automatically refresh as they expire
+* 📋 Quickly copy generated codes when needed
+* 🛡️ Keep your TOTP information together with your credentials
 
-# 📦 Releases
+TOTP codes provide an additional layer of protection when signing in to services that support two-factor authentication.
 
-New versions of PicklePass will be published through the repository's **Releases** page.
-
-### Current Release
-
-**PicklePass v1.0.0**
-
-🎉 Initial release of PicklePass.
-
-**Download:**
-[⬇️ PicklePass v1.0.0](../../releases/latest)
+> **⚠️ Important:** Protect your TOTP secrets just like your passwords. Anyone with access to a TOTP secret may be able to generate authentication codes for the associated account.
 
 ---
 
