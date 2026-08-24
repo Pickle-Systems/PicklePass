@@ -1,0 +1,325 @@
+# PicklePass Website — `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PicklePass | PickleForge-Labs</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:"Segoe UI",Arial,sans-serif;
+    color:white;
+    background:
+        radial-gradient(circle at 10% 0%,rgba(16,185,129,.28),transparent 32%),
+        radial-gradient(circle at 90% 20%,rgba(37,99,235,.24),transparent 32%),
+        #050816;
+    min-height:100vh;
+}
+
+.container{
+    width:min(1080px,calc(100% - 40px));
+    margin:auto;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 0;
+}
+
+.brand{
+    font-weight:800;
+    font-size:20px;
+}
+
+nav a{
+    color:#cbd5e1;
+    text-decoration:none;
+    margin-left:18px;
+}
+
+.hero{
+    text-align:center;
+    padding:85px 20px 70px;
+}
+
+.logo{
+    font-size:95px;
+    filter:drop-shadow(0 0 30px rgba(16,185,129,.4));
+}
+
+.badge{
+    display:inline-block;
+    margin-top:15px;
+    padding:8px 14px;
+    border-radius:999px;
+    background:rgba(16,185,129,.12);
+    border:1px solid rgba(52,211,153,.3);
+    color:#a7f3d0;
+    font-weight:800;
+    font-size:13px;
+}
+
+h1{
+    font-size:clamp(54px,8vw,82px);
+    margin:15px 0;
+    background:linear-gradient(90deg,#34d399,#60a5fa);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+}
+
+.subtitle{
+    font-size:27px;
+    color:#cbd5e1;
+}
+
+.hero p{
+    color:#94a3b8;
+    line-height:1.7;
+}
+
+.button{
+    display:inline-block;
+    margin:8px;
+    padding:14px 24px;
+    border-radius:15px;
+    background:linear-gradient(135deg,#059669,#2563eb);
+    color:white;
+    text-decoration:none;
+    font-weight:800;
+}
+
+.button.secondary{
+    background:#111827;
+    border:1px solid rgba(255,255,255,.1);
+}
+
+.card{
+    background:rgba(15,23,42,.7);
+    border:1px solid rgba(255,255,255,.09);
+    border-radius:26px;
+    padding:32px;
+    margin:25px 0;
+    backdrop-filter:blur(18px);
+}
+
+.card h2{
+    color:#6ee7b7;
+    font-size:30px;
+}
+
+.card p{
+    color:#cbd5e1;
+    line-height:1.7;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:17px;
+}
+
+.feature{
+    background:rgba(17,24,39,.75);
+    border:1px solid rgba(255,255,255,.07);
+    border-radius:19px;
+    padding:23px;
+}
+
+.feature h3{
+    margin-top:0;
+}
+
+.feature p{
+    color:#94a3b8;
+    margin-bottom:0;
+}
+
+.v2{
+    border-color:rgba(96,165,250,.28);
+    background:
+        radial-gradient(circle at 100% 0%,rgba(37,99,235,.18),transparent 40%),
+        rgba(15,23,42,.72);
+}
+
+.v2-label{
+    display:inline-block;
+    padding:7px 12px;
+    border-radius:10px;
+    background:rgba(37,99,235,.14);
+    color:#bfdbfe;
+    font-size:13px;
+    font-weight:800;
+}
+
+footer{
+    text-align:center;
+    padding:55px;
+    color:#64748b;
+}
+
+@media(max-width:650px){
+    nav a{
+        display:none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+    <div class="brand">🔐 PicklePass</div>
+
+    <div>
+        <a href="#features">Features</a>
+        <a href="#github">GitHub</a>
+    </div>
+</nav>
+
+<section class="hero">
+
+    <div class="logo">🔐🥒</div>
+
+    <div class="badge">
+        🔒 Security-focused software
+    </div>
+
+    <h1>PicklePass</h1>
+
+    <p class="subtitle">
+        Your passwords. Your control.
+    </p>
+
+    <p>
+        A security-focused password manager project
+        built by PickleForge-Labs.
+    </p>
+
+    <div>
+        <a class="button"
+           href="https://github.com/PickleForge-Labs/PicklePass">
+            ⭐ GitHub
+        </a>
+
+        <a class="button secondary"
+           href="https://github.com/PickleForge-Labs/PicklePass">
+            View Project
+        </a>
+    </div>
+
+</section>
+
+<section class="card v2">
+
+    <span class="v2-label">🚧 DEVELOPMENT</span>
+
+    <h2>PicklePass is Growing</h2>
+
+    <p>
+        PicklePass is being developed as part of the PickleForge-Labs
+        software ecosystem, with security and user control at its core.
+    </p>
+
+</section>
+
+<section class="card" id="features">
+
+    <h2>🔐 Features</h2>
+
+    <div class="grid">
+
+        <div class="feature">
+            <h3>🔑 Password Management</h3>
+            <p>
+                Organize credentials and keep important account
+                information in one place.
+            </p>
+        </div>
+
+        <div class="feature">
+            <h3>🛡️ Security Focus</h3>
+            <p>
+                Designed around protecting sensitive information
+                and keeping users in control.
+            </p>
+        </div>
+
+        <div class="feature">
+            <h3>💻 Desktop First</h3>
+            <p>
+                Built with powerful desktop workflows in mind.
+            </p>
+        </div>
+
+        <div class="feature">
+            <h3>⚒️ Open Development</h3>
+            <p>
+                Follow development and improvements directly
+                through the GitHub repository.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="card">
+
+    <h2>🥒 Part of PickleForge-Labs</h2>
+
+    <p>
+        PicklePass is one of several projects being built by
+        PickleForge-Labs alongside PickleAI and other software tools.
+    </p>
+
+    <a class="button"
+       href="https://pickleforge-labs.github.io/PickleAI/">
+        Visit PickleAI
+    </a>
+
+</section>
+
+<section class="card" id="github">
+
+    <h2>⭐ Open Source</h2>
+
+    <p>
+        Explore the source code, follow development, report issues,
+        and see what's being built next.
+    </p>
+
+    <a class="button"
+       href="https://github.com/PickleForge-Labs/PicklePass">
+        Open PicklePass GitHub
+    </a>
+
+</section>
+
+</div>
+
+<footer>
+    🔐🥒 <strong>PicklePass</strong><br>
+    A project by PickleForge-Labs
+</footer>
+
+</body>
+</html>
+```
