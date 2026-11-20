@@ -2,9 +2,12 @@
 
 ### 🔐 A simple, private password manager for Windows
 
-**PicklePass** is a lightweight password manager built by **PickleForge Labs**. It gives you a simple way to organize and manage your passwords and sensitive information on your Windows PC.
+**PicklePass** is a lightweight password manager built by **Pickle Systems**. It gives you a simple way to organize and manage your passwords and sensitive information on your Windows PC.
 
 No complicated setup. No unnecessary clutter. Just PicklePass.
+
+**Official website:** https://pickle-systems.github.io/PicklePass/  
+**Developer:** [Pickle Systems](https://pickle-systems.github.io/)
 
 <p align="center">
 
@@ -122,7 +125,7 @@ TOTP codes provide an additional layer of protection when signing in to services
 
 # 🛠️ Development
 
-PicklePass is actively being developed by **PickleForge Labs**.
+PicklePass is actively being developed by **Pickle Systems**.
 
 The project may change significantly as new features, improvements, and security enhancements are introduced.
 
